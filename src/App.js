@@ -16,7 +16,7 @@ function App() {
           <p>Engieering Mangement</p>
           <p>JavaScript / HTML / CSS</p>
           <p>React / Angular</p>
-          <p>DevOps</p>
+          <p>Typescript</p>
           <p>UI Design Systems</p>
         </div>
       </header>
