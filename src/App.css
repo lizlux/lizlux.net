@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Desktop Styles */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  align-items: stretch;
   display: flex;
-  flex-direction: column;
+  color: #3d494b;
+  font-size: 14px;
+  max-width: 1080px;
+  min-height: 100vh;
+  text-shadow: 2px 2px 5px white;
+  width: 100%;
+
+  --page-padding-vertical: 60px;
+  --desktop-header-width: 300px;
+  --link-color: #ef6925;
+  --sidebar-bg: #dbd5c0;
+  --sidebar-shadow: #cadecb;
+}
+
+.header {
   align-items: center;
+  background-color: var(--sidebar-bg);
+  box-shadow: 0 0 6px var(--sidebar-shadow);
+  display: flex;
+  flex-direction: column  ;
+  justify-content: flex-start;
+  padding: var(--page-padding-vertical) 15px;
+  width: var(--desktop-header-width);
+}
+
+.headshot {
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 0 0 1px #3d494b;
+  display: flex;
+  height: 200px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
+  width: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+.headshot img {
+  max-width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.content {
+  padding: var(--page-padding-vertical) 5%;
+  z-index: 2;
+}
+
+.nav ul, .nav li {
+  font-size: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav li:after {
+  content: "\2022";
+  color: var(--link-color);
+  position: absolute;
+  margin-left: 7px;
+}
+
+.nav li:last-child:after {
+  content: "";
+}
+
+.details {
+  text-align: center;
+  z-index: 2;
+}
+
+.vine {
+  max-width: 900px;
+  opacity: .7;
+  position: fixed;
+  right: -400px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 37px;
+  max-width: 400px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+ p {
+   margin-bottom: 10px;
+ }
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile overrides */
+
+@media screen and (max-width: 950px){
+  .container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header {
+    width: 100%;
+  }
+
+  .vine {
+    max-width: 600px;
+    opacity: .1;
+    position: fixed;
+    right: -350px;
+    top: 0;
+  }
+  
+  .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 20px 100px;
+  }
+
+  .nav ul {
+    justify-content: center;
   }
 }
