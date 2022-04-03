@@ -13,7 +13,7 @@ function App() {
         <h1>Liz Lee</h1>
         <div class="details">
           <p>Lead Front End Engineer</p>
-          <p>Engieering Mangement</p>
+          <p>Engineering Mangement</p>
           <p>JavaScript / Typescript / HTML / CSS</p>
           <p>React / Redux / Angular / NgRx</p>
           <p>UI Design Systems</p>
