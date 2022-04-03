@@ -14,10 +14,10 @@ function App() {
         <div class="details">
           <p>Lead Front End Engineer</p>
           <p>Engieering Mangement</p>
-          <p>JavaScript / HTML / CSS</p>
-          <p>React / Angular</p>
-          <p>Typescript</p>
+          <p>JavaScript / Typescript / HTML / CSS</p>
+          <p>React / Redux / Angular / NgRx</p>
           <p>UI Design Systems</p>
+          <p>Expert Level</p>
         </div>
       </header>
       <section className="content">
