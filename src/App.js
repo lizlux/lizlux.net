@@ -1,6 +1,12 @@
 import headshot from './images/Liz_Lee_Headshot.jpg';
 import vine from './images/Vine.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
 
 function App() {
   return (
