@@ -1,4 +1,4 @@
-#LizLux.net
+# LizLux.net
 
 This is a simple portfolio website build with React.
 
