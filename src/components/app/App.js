@@ -1,62 +1,27 @@
-import headshot from "../../images/Liz_Lee_Headshot.jpg";
-import vine from "../../images/Vine.svg";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "../home/Home";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <Router>
-      <div className="container">
-        <img src={vine} className="vine" alt="decorative vine" />
-        <header className="header">
-          <span className="headshot">
-            <img src={headshot} alt="Liz Lee Headshot" />
-          </span>
-
-          <h1>Liz Lee</h1>
-          <div class="details">
-            <p>Lead Front End Engineer</p>
-            <p>Engineering Mangement</p>
-            <p>JavaScript / Typescript / HTML / CSS</p>
-            <p>React / Redux / Angular / NgRx</p>
-            <p>UI Design Systems</p>
-            <p>Expert Level</p>
-          </div>
-        </header>
-        <section className="content">
-          <h2>
-            Lets Build
-            <br />
-            Great Products
-          </h2>
-          <nav class="nav">
-            <ul>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/lizluxlee/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/lizlux"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Github
-                </a>
-              </li>
-              <li>
-                <a href="/Liz_Lee_Resume.pdf" target="_blank" rel="noreferrer">
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </section>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/portfolio">Portfolio</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+        </Routes>
       </div>
     </Router>
   );
